@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static%}
+{%block titulo %}           
+<title>Formulario</title>
+{% endblock %}
+
+
+{% block inicio%}
+<h1>Ingreso de Productos</h1>
+<style>
+    .div-3 {
+    background-color: #FBD603;
+}
+</style>
+<form method="POST">
+    {% csrf_token %} 
+
+
+    {% if error %}
+    <h2>{{error}}</h2>
+    {% else %}
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+    <div>
+        <div >Nombre</div>
+        <div>{{form.nombre}}</div>
+
+
+    </div>
+    <div>
+        <div >Tipo</div>
+        <div>{{form.tipo}}</div>
+
+
+    </div>
+    <div>
+        <div >Imagen</div>
+        <div>{{form.imagen}}</div>
+
+
+    </div>
+
+
+    <button type = "submit" name="Enviar">Enviar</button>
+    </form>
+    {% endif %}
+
+</form>
+{%endblock%}

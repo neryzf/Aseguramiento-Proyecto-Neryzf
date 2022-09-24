@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{%block titulo %}           
+<title>Registro Usuarios</title>
+{% endblock %}
+
+{% block barra%}
+<div class="navbar">
+    <div class="navbar-inner">
+<div class="container">
+    <center>
+<p>Ingresa tus datos para registrarte</p>
+</center>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
+{% block inicio %}
+<style>
+    .div-1 {
+        background-color: #EBEBEB;
+    }
+    
+    .div-2 {
+    	background-color: #ABBAEA;
+    }
+    
+    .div-3 {
+    	background-color: #FBD603;
+    }
+</style>
+<center>
+<div  id="service">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" name="Guardar">
+
+</form>
+</div>
+</center>
+{%endblock%}

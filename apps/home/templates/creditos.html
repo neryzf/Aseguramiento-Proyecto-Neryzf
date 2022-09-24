@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+{% load static%}
+{%block titulo %}           
+<title>Creditos</title>
+{% endblock %}
+
+{% block creditos %}
+<div class="section secondary-section " id="portfolio">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class=" title">
+            <h1>Conoce al creador de esta págisna</h1>
+            <p>Todo lo puedo en cristo que me fortalece!</p>
+        </div>
+        <!-- Start details for portfolio project 1 -->
+        <div id="single-project">
+            <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                <div class="span6">
+                    <img src="{% static 'images/yo1.jpg' %}" alt="project 1" />
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>Creador del Proyecto</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <span>Nombre</span>Nery Juan Luis Zacarias Fuentes</div>
+                            <div>
+                                <span>Fecha</span>24/09/2021</div>
+                            <div>
+                                <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                        </div>
+                        <p>Cree en tí! ten fé en tus habilidades! hay que ser humildes y responsables!</p>
+                            <span>Télefono</span> +502 46673323
+                    </div>
+                </div>
+            </div>
+            
+            <p >Algunas de mis paginas creadas:</p>
+            <!-- End details for portfolio project 1 -->
+            <!-- Start details for portfolio project 2 -->
+            <div id="slidingDiv1" class="toggleDiv row-fluid single-project">
+                <div class="span6">
+                    <img src="https://i.ytimg.com/vi/hLK9bAoTvKQ/maxresdefault.jpg" alt="project 2">
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>Facebook</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <span>Cliente</span>Mark Sukerverg</div>
+                            <div>
+                                <span>Date</span>July 2013</div>
+                            <div>
+                                <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                            <div>
+                                <span>Link</span>http://facebook.com</div>
+                        </div>
+                        <p>Una pagina simple para personas extraordinarias!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End details for portfolio project 2 -->
+            <!-- Start details for portfolio project 3 -->
+            <div id="slidingDiv2" class="toggleDiv row-fluid single-project">
+                <div class="span6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-1V7sphI5VSN57Di34t5eMECclHIA0_KMvSRavXIWaXNCFeyTJQFziYF35Z6huS3PczA&usqp=CAU" alt="project 3">
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>Twitter</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <span>Cliente</span>Twitter corporation</div>
+                            <div>
+                                <span>Date</span>July 2011</div>
+                            <div>
+                                <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                            <div>
+                                <span>Link</span>http://twitter.com</div>
+                        </div>
+                        <p>Me parece que somos una copia de facebook pero para chavos</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End details for portfolio project 3 -->
+            <!-- Start details for portfolio project 4 -->
+            <div id="slidingDiv3" class="toggleDiv row-fluid single-project">
+                <div class="span6">
+                    <img src="https://www.elimparcial.es/fotos/1/youtube-tv.jpg" alt="project 4">
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>Youtube</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <span>Cliente</span>Google</div>
+                            <div>
+                                <span>Date</span>Enero 2005</div>
+                            <div>
+                                <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                            <div>
+                                <span>Link</span>http://Youtube.com</div>
+                        </div>
+                        <p>Horas de diversion viendo a otros divertirse</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End details for portfolio project 4 -->
+            <ul id="portfolio-grid" class="thumbnails row">
+                <li class="span4 mix web">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio01.png' %}" alt="project 1">
+                        <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix photo">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio02.png'%}" alt="project 2">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv1">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix identity">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio03.png' %}" alt="project 3">
+                        <a href="#single-project" class="more show_hide" rel="#slidingDiv2">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix web">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio04.png'%}" alt="project 4">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv3">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix photo">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio05.png'%}" alt="project 5">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv4">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix identity">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio06.png'%}" alt="project 6">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv5">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix web">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio07.png'%}" alt="project 7" />
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv6">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix photo">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio08.png' %}" alt="project 8">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv7">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li class="span4 mix identity">
+                    <div class="thumbnail">
+                        <img src="{% static 'images/Portfolio09.png'%}" alt="project 9">
+                        <a href="#single-project" class="show_hide more" rel="#slidingDiv8">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>Thumbnail label</h3>
+                        <p>Thumbnail caption...</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

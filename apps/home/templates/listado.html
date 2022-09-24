@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static%}
+{%block titulo %}           
+<title>Articulos</title>
+{% endblock %}
+
+
+{% block inicio %}
+   
+
+    <div  >
+        <h1>Listado de Artículos</h1>
+    <table border="3" class="table table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <td class="table-info">Nombre</td>
+            <td class="table-info">Tipo</td>
+            <td class="table-info">Imagen de referencia</td>
+            <td class="table-info">Agregar al carrito</td>
+        </tr>
+    </thead>
+    {% for est in object_list %}
+    <tr>
+    <td class="table-info" >{{est.nombre}} </td>
+    <td class="table-info">{{est.tipo}}</td>
+    <td class="table-info"><img src="{{est.imagen}}" width="120" height="40"> </td>
+    <td class="table-info"><a href="#"><img src="{% static 'images/carrito.png' %}" width="60" height="40"/></a></td>
+    </tr>
+{% endfor %}
+</table>
+</div>
+{%endblock%}
